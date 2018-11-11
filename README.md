@@ -1,3 +1,3 @@
 # Nanxi's Personal Website
 
-![Screenshot](./public/img/screenshot.PNG)
+![Screenshot](public/img/screenshot.PNG)
