@@ -1,3 +1,3 @@
-# homepage-nanxi
-Flex your HTML &amp; CSS skills by building yourself a personal homepage.
-"# nanxi" 
+# Nanxi's Personal Website
+
+![Screenshot](/public/img/screenshot.PNG)
