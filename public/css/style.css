@@ -1,0 +1,147 @@
+/* Setting variable for website theme's red */
+:root {
+    --main-color: #f04b50;
+}
+
+body {
+    font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightgray;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Fredoka One', 'Times New Roman', Times, serif !important;
+    font-size: 35px;
+    line-height: 90%;
+}
+
+/* Navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: var(--main-color);
+}
+
+/* padding-left and padding-right 5% for many */
+.title-top, article.img-description p, #index-description {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Index.html CSS */
+#home-pic {
+    padding-top: 3%;
+}
+
+#index-description {
+    padding-top: 1%;
+}
+
+/* Social media Font Awesome icons in homepage (index.html) */
+.fa {
+    color: black !important;
+    text-decoration: none;
+}
+.fa:visited, .fa:active{
+    color: black;
+    text-decoration: none;
+}
+.fa:hover, .fa:focus {
+    color: var(--main-color) !important;
+    text-decoration: none;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-section:last-child {
+    padding-bottom: 8%;
+}
+
+/* Title for all html pages except index.html */
+.title-top {
+    text-align: center;
+}
+
+/* about.html CSS */
+.about-text {
+    margin: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* Text in projects.html and activities.html */
+.body-text {
+    margin: 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-description {
+    text-align: center;
+}
+
+#life-img {
+    border-width: 1px;
+    border-style: solid;
+}
+
+@media (max-width: 800px) {
+    .about-text, .body-text {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .body-text {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 450px) {
+    #home-pic, .long-pic {
+        height: 325px;
+        padding-top: 8%;
+    }
+    img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar li a {
+        padding: 14px 8px;
+    }
+}
